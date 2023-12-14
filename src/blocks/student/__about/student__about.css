@@ -1,0 +1,6 @@
+.student__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 270px;
+}

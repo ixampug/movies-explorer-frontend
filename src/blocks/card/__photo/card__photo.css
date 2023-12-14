@@ -1,0 +1,9 @@
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  max-height: 201px;
+  }

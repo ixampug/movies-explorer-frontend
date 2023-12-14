@@ -1,0 +1,11 @@
+@import url(../../blocks/project/project.css);
+@import url(../../blocks/project/__box/project__box.css);
+@import url(../../blocks/project/__card/project__card.css);
+@import url(../../blocks/project/__meter/project__meter.css);
+@import url(../../blocks/project/__meter/_black/project__meter_black.css);
+@import url(../../blocks/project/__meter/_green/project__meter_green.css);
+@import url(../../blocks/project/__meter/_grey/project__meter_grey.css);
+@import url(../../blocks/project/__paragraph/project__paragraph.css);
+@import url(../../blocks/project/__progress/project__progress.css);
+@import url(../../blocks/project/__text/project__text.css);
+@import url(../../blocks/project/__title/project__title.css);

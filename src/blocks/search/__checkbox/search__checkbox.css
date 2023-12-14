@@ -1,0 +1,8 @@
+.search__checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 29px;
+}
