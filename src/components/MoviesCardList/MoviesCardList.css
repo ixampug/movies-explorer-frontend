@@ -1,7 +1,32 @@
 .movies-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 70px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 70px auto 0;
+}
+
+.cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 65px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    gap: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 0;
+  }
 }

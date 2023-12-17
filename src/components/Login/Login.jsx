@@ -1,40 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo2.svg";
-import "./Register.css";
-export default function Register() {
+import "./Login.css";
+export default function Login() {
   return (
     <form className="auth" name="login" noValidate>
       <div className="auth__login">
         <Link to="/" className="auth__logo-link">
           <img src={logo} alt="logo" className="auth__logo" />
         </Link>
-        <h1 className="auth__title">Добро пожаловать!</h1>
-        <p className="auth__input-name">Имя</p>
-        <input
-          className="auth__input"
-          placeholder="Введите bvz"
-        />
+        <h1 className="auth__title">Рады видеть!</h1>
         <p className="auth__input-name">Email</p>
         <input
           className="auth__input"
           placeholder="Введите email"
-          
         />
         <p className="auth__input-name">Пароль</p>
         <input
           className="auth__input"
           placeholder="Введите пароль"
         />
-        <Link to="/movies" className="auth__button_register">
+        <Link to="/movies" className="auth__button">
           <button type="submit" className="auth__submit">
-            Зарегистрироваться
+            Войти
           </button>
         </Link>
         <p className="auth__text">
-        Уже зарегистрированы??
-          <Link to="/sign-in" className="auth__link">
-            Войти
+          Ещё не зарегистрированы?
+          <Link to="/sign-up" className="auth__link">
+            Регистрация
           </Link>
         </p>
       </div>

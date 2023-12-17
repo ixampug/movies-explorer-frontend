@@ -17,6 +17,7 @@ export default function MoviesCard() {
   return (
     <div className="card">
       <img className="card__photo" src={Banksy} alt="banksy" />
+      <button className="card__like" type="button"></button>
       <div className="card__table">
         <h2 className="card__name">В погоне за Бенкси</h2>
         <p className="card__duration">1ч17м</p>

@@ -1,2 +1,20 @@
-@import url(../../blocks/navtab/navtab.css);
-@import url(../../blocks/navtab/__link/navtab__link.css);
+.navtab {
+  background-color: #272727;
+  padding-top: 151px;
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+.navtab__link {
+  background-color: #303030;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0 5px 30px;
+}

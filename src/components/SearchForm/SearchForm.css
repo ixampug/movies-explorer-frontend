@@ -1,9 +1,95 @@
-@import url(../../blocks/search/search.css);
-@import url(../../blocks/search/__checkbox/search__checkbox.css);
-@import url(../../blocks/search/__button/search__button.css);
-@import url(../../blocks/search/__input/search__input.css);
-@import url(../../blocks/search/__slider/search__slider.css);
-@import url(../../blocks/search/__switch/search__switch.css);
-@import url(../../blocks/search/__switch/input/search__switch_input.css);
-@import url(../../blocks/search/__text/search__text.css);
-@import url(../../blocks/search/__section/search__section.css);
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+.search__text {
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.search__switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 14px;
+}
+
+.search__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.search__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(196, 196, 196, 1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.search__slider::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .search__slider {
+  background-color: rgba(76, 175, 80, 1);
+}
+
+input:checked + .search__slider::before {
+  transform: translateX(22px);
+}
+
+.search__section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+.search__input {
+  border: none;
+  border-radius: 8px;
+  background-color: #2f2f2f;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  max-width: 1086px;
+  padding-left: 20px;
+}
+.search__checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 29px;
+}
+.search__button {
+  background-image: url(../../images/find.svg);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}

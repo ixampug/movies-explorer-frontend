@@ -1,10 +1,55 @@
-@import url(../../blocks/card/card.css);
-@import url(../../blocks/card/__photo/card__photo.css);
-@import url(../../blocks/cards/cards.css);
-@import url(../../blocks/card/__delete/card__delete.css);
-@import url(../../blocks/card/__table/card__table.css);
-@import url(../../blocks/card/__name/card__name.css);
-@import url(../../blocks/card/__like-container/card__like-container.css);
-@import url(../../blocks/card/__like/card__like.css);
-@import url(../../blocks/card/__like-counter/card__like-counter.css);
-@import url(../../blocks/card/__like/_active/card__like_active.css);
+.card {
+  box-sizing: border-box;
+  position: relative;
+  width: 360px;
+}
+
+.card__table {
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  color: #ffffff;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+}
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  max-height: 201px;
+}
+
+.card__name {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.card__duration {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8b8b8b;
+  background-color: #2f2f2f;
+}
+
+.card__like {
+  background: transparent;
+  background-image: url(../../images/saved.svg);
+  width: 72px;
+  height: 21px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  padding: 0;
+}

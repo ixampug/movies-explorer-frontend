@@ -5,36 +5,15 @@ import React from "react";
 export default function Header(props) {
   return (
     <header className="header">
-      <img src={logo} alt="место" className="header__logo" />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="header__info">
-              <p className="header__email">{props.currentUserEmail}</p>
-              <Link className="header__exit" onClick={props.onLogout}>
-                Аккаунт
-              </Link>
-            </div>
-          }
-        />
-        <Route
-          path="/sign-in"
-          element={
-            <Link className="header__enter" to="/sign-up">
-              Регистрация
-            </Link>
-          }
-        />
-        <Route
-          path="/sign-up"
-          element={
-            <Link className="header__enter" to="/sign-in">
-              Войти
-            </Link>
-          }
-        />
-      </Routes>
+      <img src={logo} alt="logo" className="header__logo" />
+      <div className="header__info">
+        <Link className="header__enter header__enter_black" to="/sign-up">
+          Регистрация
+        </Link>
+        <Link className="header__enter" to="/sign-in">
+          Войти
+        </Link>
+      </div>
     </header>
   );
 }

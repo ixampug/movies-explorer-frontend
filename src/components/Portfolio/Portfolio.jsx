@@ -25,7 +25,7 @@ export default function Portfolio() {
         <a
           href="https://github.com/ixampug/react-mesto-api-full-gha"
           target="_blank"
-          className="portfolio__link"
+          className="portfolio__link portfolio__link_black"
           rel="noreferrer"
         >
           Одностраничное приложение

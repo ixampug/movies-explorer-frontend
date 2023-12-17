@@ -1,9 +1,0 @@
-.techs__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #303030;
-    font-size: 14px;
-    min-height: 60px;
-    border-radius: 10px;
-}

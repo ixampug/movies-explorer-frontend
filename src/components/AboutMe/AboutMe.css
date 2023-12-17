@@ -1,10 +1,48 @@
-@import url(../../blocks/student/student.css);
-@import url(../../blocks/student/__about/student__about.css);
-@import url(../../blocks/student/__bio/student__bio.css);
-@import url(../../blocks/student/__container/student__container.css);
-@import url(../../blocks/student/__description/student__description.css);
-@import url(../../blocks/student/__information/student__information.css);
-@import url(../../blocks/student/__link/student__link.css);
-@import url(../../blocks/student/__name/student__name.css);
-@import url(../../blocks/student/__photo/student__photo.css);
-@import url(../../blocks/student/__title/student__title.css);
+.student__photo {
+  max-width: 270px;
+  max-height: 327px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.student__name {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.student__link {
+  text-decoration: none;
+  color: #fff;
+  padding-top: 99px;
+  padding-bottom: 101px;
+}
+.student__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 23px;
+  max-width: 1140px;
+  margin: 100px auto;
+  width: 100%;
+}
+
+.student__description {
+  font-weight: 500;
+  font-size: 18px;
+}
+.student__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.student__bio {
+  font-size: 14px;
+  font-weight: 400;
+}
+.student__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 270px;
+}

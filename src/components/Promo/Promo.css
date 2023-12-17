@@ -1,2 +1,17 @@
-@import url(../../blocks/promo/promo.css);
-@import url(../../blocks/promo/__title/promo__title.css);
+.promo {
+  background-color: #272727;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 1280px;
+}
+
+.promo__title {
+  font-size: 50px;
+  font-weight: 400;
+  margin: auto;
+  max-width: 730px;
+  padding-top: 160px;
+}
