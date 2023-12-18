@@ -1,48 +1,121 @@
-.student__photo {
-  max-width: 270px;
-  max-height: 327px;
-  border-radius: 10px;
-  object-fit: cover;
+.student {
+  box-sizing: border-box;
+  padding: 110px 70px 101px;
 }
 
-.student__name {
-  font-size: 50px;
-  font-weight: 400;
+@media screen and (max-width: 789px) {
+  .student {
+    padding: 90px 50px 90px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .student {
+    padding: 70px 12px 68px;
+  }
 }
 
-.student__link {
-  text-decoration: none;
-  color: #fff;
-  padding-top: 99px;
-  padding-bottom: 101px;
+.student__container {
+  display: flex;
+  flex-direction: column;
 }
+
+
 .student__title {
   color: #ffffff;
   font-weight: 400;
   font-size: 22px;
-  border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid #dadada;
   padding-bottom: 23px;
-  max-width: 1140px;
-  margin: 100px auto;
-  width: 100%;
+  
+}
+@media screen and (max-width: 440px) {
+  .student__title {
+    font-size: 18px;
+    padding-bottom: 28px;
+  }
 }
 
-.student__description {
+.student__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+@media screen and (max-width: 755px) {
+  .student__content {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 2 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  .student__content {
+    margin-top: 60px;
+    justify-content: none;
+    gap: 47px;
+};
+  }
+
+
+.student-info {
+  max-width: 600px;
+  text-align: left;
+}
+@media screen and (max-width: 1024px) {
+  .student-info {
+    max-width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .student-info {
+    max-width: 292px;
+  }
+}
+.student-info__name {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 400;
+}
+@media screen and (max-width: 755px) {
+  .student-info__name {
+    font-size: 40px;
+    
+  }
+}
+@media screen and (max-width: 440px) {
+  .student-info__name {
+    font-size: 30px;
+    
+  }
+}
+
+.student-info__role {
   font-weight: 500;
   font-size: 18px;
 }
-.student__container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1280px;
-}
-.student__bio {
-  font-size: 14px;
-  font-weight: 400;
-}
-.student__about {
+
+.student-bio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-right: 270px;
+  
+}
+
+.student-bio__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.student-bio__link {
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.student-photo {
+  max-width: 270px;
+  max-height: 327px;
+  border-radius: 10px;
+  object-fit: cover;
 }

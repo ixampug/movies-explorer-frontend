@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  position: absolute; /* Абсолютное позиционирование для Footer */
+  position: absolute; 
   bottom: 0;
   width: 100%;
   background-color: #1f1f1f;
@@ -12,16 +12,13 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding-left: 24px;
-    padding-right: 24px;
+    
     padding-top: 88px;
   }
 }
 
 @media screen and (max-width: 565px) {
   .footer {
-    padding-left: 16px;
-    padding-right: 16px;
     padding-top: 48px;
     flex-direction: column;
     row-gap: 48px;

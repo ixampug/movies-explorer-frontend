@@ -1,7 +1,7 @@
 .promo {
   background-color: #272727;
   display: flex;
-  box-sizing: border-box;
+  
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 0 0;
