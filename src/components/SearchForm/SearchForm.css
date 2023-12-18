@@ -44,7 +44,7 @@
   width: 13px;
   left: 0;
   bottom: 0;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
@@ -92,4 +92,11 @@ input:checked + .search__slider::before {
   background-size: cover;
   border-radius: 5px;
   background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+}
+
+.search__button:hover {
+  opacity: 0.6;
 }

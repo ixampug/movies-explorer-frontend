@@ -2,10 +2,12 @@ import "./Header.css";
 import logo from "../../images/logo2.svg";
 import { Route, Routes, Link } from "react-router-dom";
 import React from "react";
-export default function Header(props) {
+export default function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="header__logo" />
+      <Link to="/" className="header__logo">
+    <img src={logo} alt="logo" />
+  </Link>
       <div className="header__info">
         <Link className="header__enter header__enter_black" to="/sign-up">
           Регистрация

@@ -6,7 +6,11 @@
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   
+  min-height: 100vh; /* Устанавливаем высоту страницы как минимум на весь экран браузера */
+  position: relative; /* Относительное позиционирование для .page */
 }
 
 @media screen and (max-width: 320px) {

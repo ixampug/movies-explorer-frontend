@@ -14,6 +14,7 @@ import Login from "../Login/Login";
 import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Profile from "../Profile/Profile";
+import HeaderLoggedIn from "../HeaderLoggedIn/HeaderLoggedIn";
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
         path="/movies"
         element={
           <div className="page">
-            <Header />
+            <HeaderLoggedIn />
             <Movies />
             <Footer />
           </div>
@@ -54,7 +55,6 @@ export default function App() {
           <div className="page">
             <Header />
             <Profile />
-            <Footer />
           </div>
         }
       />
