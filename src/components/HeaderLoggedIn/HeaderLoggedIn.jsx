@@ -2,6 +2,7 @@ import "./HeaderLoggedIn.css";
 import logo from "../../images/logo2.svg";
 import { Route, Routes, Link } from "react-router-dom";
 import React from "react";
+import Navigation from "../Navigation/Navigation";
 export default function HeaderLoggedIn() {
   return (
     <header className="header-logged">
@@ -20,6 +21,7 @@ export default function HeaderLoggedIn() {
         <Link to="/profile" className="header-logged__profile">
           Аккаунт
         </Link>
+        <Navigation />
       </div>
     </header>
   );

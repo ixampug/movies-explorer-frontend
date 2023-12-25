@@ -1,20 +1,26 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  
   background-color: #202020;
   padding: 18px 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .header {
     padding: 18px 30px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 440px) {
   .header {
     padding: 18px 15px;
   }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header__logo {
@@ -35,7 +41,7 @@
   width: 184px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 440px) {
   .header__info {
     width: 132px;
   }
@@ -56,22 +62,27 @@
   width: 77px;
   height: 32px;
 }
+.header__enter:hover {
+  opacity: 0.6;
+}
 
-.header__enter_black {
+.header__enter_theme_black {
   color: #fff;
   background-color: #202020;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 440px) {
   .header__enter {
     width: 54px;
     height: 26px;
     font-size: 10px;
+    
   }
 }
 
-@media screen and (max-width: 320px) {
-  .header__enter_black {
+@media screen and (max-width: 440px) {
+  .header__enter_theme_black {
     font-size: 10px;
+    
   }
 }

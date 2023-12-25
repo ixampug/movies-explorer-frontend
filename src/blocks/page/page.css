@@ -2,19 +2,14 @@
   background-color: #202020;
   color: #fff;
   font-weight: 400;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  
-  min-height: 100vh; /* Устанавливаем высоту страницы как минимум на весь экран браузера */
-  position: relative; /* Относительное позиционирование для .page */
+  min-height: 100vh;
+  position: relative;
+  /* padding: 0 10px; */
 }
 
-@media screen and (max-width: 320px) {
-  .page {
-      padding: 28px 0 36px;
-  }
-}

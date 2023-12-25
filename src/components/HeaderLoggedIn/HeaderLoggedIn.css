@@ -1,10 +1,10 @@
 .header-logged {
   display: flex;
-  background-color: #202020;
+  
   padding: 18px 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .header-logged {
     padding: 18px 30px;
   }
@@ -70,6 +70,12 @@
   justify-content: center;
   transition: opacity 0.3s ease-in-out;
 }
+@media screen and (max-width: 770px) {
+    .header-logged__profile {
+      display: none;
+    }
+  }
+  
 .header-logged__profile:hover {
     opacity: 0.7;
   }

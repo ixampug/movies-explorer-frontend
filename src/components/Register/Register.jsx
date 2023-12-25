@@ -4,7 +4,7 @@ import logo from "../../images/logo2.svg";
 import "./Register.css";
 export default function Register() {
   return (
-    <form className="auth" name="login" noValidate>
+    <form className="auth" name="register" noValidate>
       <div className="auth__login">
         <Link to="/" className="auth__logo-link">
           <img src={logo} alt="logo" className="auth__logo" />
@@ -26,7 +26,7 @@ export default function Register() {
           className="auth__input"
           placeholder="Введите пароль"
         />
-        <Link to="/movies" className="auth__button_register">
+        <Link to="/movies" className="auth__register-button">
           <button type="submit" className="auth__submit">
             Зарегистрироваться
           </button>

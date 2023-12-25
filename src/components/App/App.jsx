@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import api from "../../utils/api";
-import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import ProtectedRoute from "../ProtectedRoute";
-import EditAvatarPopup from "../EditAvatarPopup";
-import EditProfilePopup from "../EditProfilePopup";
-import InfoTooltip from "../InfoTooltip";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Profile from "../Profile/Profile";
 import HeaderLoggedIn from "../HeaderLoggedIn/HeaderLoggedIn";
-
+import NotFound from "../NotFound/NotFound";
 export default function App() {
   return (
     <Routes>
@@ -43,7 +37,7 @@ export default function App() {
         path="/saved-movies"
         element={
           <div className="page">
-            <Header />
+            <HeaderLoggedIn />
             <SavedMovies />
             <Footer />
           </div>
@@ -52,14 +46,15 @@ export default function App() {
       <Route
         path="/profile"
         element={
-          <div className="page">
-            <Header />
+          <>
+            <HeaderLoggedIn />
             <Profile />
-          </div>
+          </>
         }
       />
       <Route path="/sign-up" element={<Register />} />
       <Route path="/sign-in" element={<Login />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

@@ -3,14 +3,33 @@
   justify-content: center;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  /* padding-top: 70px;
+  padding-bottom: 70px; */
   width: 100%;
   background-color: #202020;
+  padding: 70px 30px 70px;
+  max-width: 1280px;
 }
+@media screen and (max-width: 1300px) {
+    .profile {
+      padding: 70px 0 70px;
+    }
+  }
+@media screen and (max-width: 770px) {
+    .profile {
+      padding: 200px 30px 200px;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .profile {
+      padding: 66px 30px 40px;
+    }
+  }
 
 .profile__box {
     display: flex;
+    max-width: 410px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -19,13 +38,27 @@
     font-size: 24px;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 124px;
+    margin-top: 0;
 }
+@media screen and (max-width: 770px) {
+    .profile__title {
+        margin-bottom: 96px;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .profile__title {
+        margin-bottom: 80px;
+    }
+  }
+
 
 .profile__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 410px;
 }
 
 .profile__name-box {
@@ -34,7 +67,7 @@
     border-bottom: 1px solid #424242;
     width: 100%;
     height: 30px;
-    align-items: center;
+    
 }
 
 .profile__email-box {
@@ -42,7 +75,7 @@
     justify-content: space-between;
     width: 100%;
     height: 30px;
-    align-items: center;
+    align-items: end;
 }
 
 .profile__label {
@@ -57,6 +90,9 @@
     outline: none;
     color: #fff;
     font-size: 11px;
+    padding: 0;
+    width: 85%;
+    height: 14px;
 }
 
 .profile__buttons {
@@ -66,6 +102,17 @@
     align-items: center;
     gap: 16px;
 }
+@media screen and (max-width: 770px) {
+    .profile__buttons {
+      margin-top: 210px;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .profile__buttons {
+      margin: 350px 10px 40px;
+    }
+  }
+  
 
 .profile__button {
     background-color: transparent;
@@ -74,7 +121,15 @@
     color: #fff;
     font-size: 13px;
 }
-
+.profile__button:hover {
+    opacity: 0.6;
+  }
+@media screen and (max-width: 470px) {
+    .profile__button {
+      font-size: 12px;
+    }
+  }
+  
 .profile__button_red {
     color: #EE3465;
 }
