@@ -1,0 +1,155 @@
+.auth {
+  width: 396px;
+  display: flex;
+  margin: 70px auto;
+  background-color: #202020;
+}
+
+@media screen and (max-width: 770px) {
+  .auth {
+    margin-top: 232px;
+  }
+}
+@media screen and (max-width: 501px) {
+  .auth {
+    width: 260px;
+    margin: 56px auto 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .auth {
+    margin: 56px 30px 30px;
+  }
+}
+
+.auth__login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (max-width: 770px) {
+  .auth__login {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .auth__login {
+    padding-left: 0;
+  }
+}
+
+.auth__logo-link {
+  display: flex;
+  justify-content: left;
+}
+@media screen and (max-width: 501px) {
+  .auth__logo-link {
+    justify-content: center;
+  }
+}
+
+.auth__logo {
+  width: 38px;
+  height: 38px;
+  margin: 0px 0px 40px;
+  justify-self: left;
+  transition: opacity 0.3s ease-in-out;
+}
+.auth__logo:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 430px) {
+  .auth__logo {
+    display: flex;
+    margin: 0px 0px 50px;
+  }
+}
+
+.auth__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0px 0px 40px;
+}
+
+@media screen and (max-width: 430px) {
+    .auth__title {
+      text-align: center;
+    }
+  }
+  
+
+.auth__button {
+  width: 100%;
+  height: 45px;
+  margin-top: 179px;
+}
+
+.auth__submit {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #4285f4;
+  border: none;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+}
+.auth__submit:hover {
+  opacity: 0.4;
+}
+
+.auth__text {
+  color: #8b8b8b;
+  text-align: center;
+  font-size: 14px;
+  margin: 16px auto 0px;
+}
+@media screen and (max-width: 770px) {
+  .auth__text {
+    font-size: 12px;
+  }
+}
+
+.auth__input-name {
+  width: 100%;
+  height: 16px;
+  margin: 17px 0 8px 0;
+  color: #8b8b8b;
+  font-size: 10px;
+  text-align: left;
+}
+.auth__input-name:first-of-type {
+  margin-top: 0px;
+}
+
+.auth__link {
+  color: #4285f4;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  padding-left: 6px;
+}
+.auth__link:hover {
+  opacity: 0.3;
+}
+
+.auth__input {
+  padding: 15px 15px;
+  border-radius: 8px;
+  outline: none;
+  background-color: #2f2f2f;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  margin: 0;
+  
+  
+}

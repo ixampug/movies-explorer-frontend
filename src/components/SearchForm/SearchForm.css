@@ -1,0 +1,143 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-bottom: 1px solid #424242; */
+  padding-bottom: 40px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 770px) {
+  .search {
+    padding-bottom: 39px;
+    padding-top: 76px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .search {
+    padding-bottom: 41px;
+    padding-top: 75px;
+  }
+}
+
+.search__text {
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.search__switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 14px;
+}
+
+.search__switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.search__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(196, 196, 196, 1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.search__slider::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .search__slider {
+  background-color: rgba(76, 175, 80, 1);
+}
+
+input:checked + .search__slider::before {
+  transform: translateX(22px);
+}
+
+.search__section {
+  display: flex;
+  margin-bottom: 28px;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+ 
+}
+@media screen and (max-width: 770px) {
+  .search__section {
+    margin-bottom: 42px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .search__section {
+    height: 44px;
+    margin-bottom: 47px;
+  }
+}
+
+
+.search__input {
+  border: none;
+  border-radius: 8px;
+  background-color: #2f2f2f;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 16px 10px 16px 20px;
+}
+@media screen and (max-width: 440px) {
+  .search__input {
+    padding: 13px 0px 13px 13px;
+  }
+}
+
+.search__checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 29px;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 40px;
+}
+.search__button {
+  background-image: url(../../images/find.svg);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  padding: 0;
+}
+
+.search__button:hover {
+  opacity: 0.6;
+}

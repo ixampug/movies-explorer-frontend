@@ -1,0 +1,129 @@
+.techs {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 100px 70px;
+  /* margin: 0 auto; */
+  
+}
+@media screen and (max-width: 770px) {
+  .techs {
+    padding: 90px 50px;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .techs {
+    padding: 70px 18px;
+    background: #202020;
+    max-width: 284px;
+  }
+}
+
+.techs__container {
+display: flex;
+flex-direction: column;
+}
+@media screen and (max-width: 440px) {
+  .techs__container {
+    margin: 0px;
+  }
+}
+
+.techs__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 23px;
+  max-width: 1140px;
+  margin: 100px auto;
+  width: 100%;
+}
+@media screen and (max-width: 440px) {
+  .techs__title {
+    font-size: 18px;
+    padding-bottom: 27px;
+  }
+}
+
+.techs__subtitle {
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .techs__subtitle {
+    font-size: 30px;
+  }
+}
+
+
+.techs__paragraph {
+  text-align: center;
+  max-width: 460px;
+  margin: 26px auto 100px;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (max-width: 769px) {
+  .techs__paragraph {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .techs__paragraph {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.techs__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style-type: none;
+  gap: 10px;
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 749px) {
+  .techs__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 489px) {
+  .techs__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 330px) {
+  .techs__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.techs__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  font-size: 14px;
+  width: 90px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 793px) {
+  .techs__item {
+    width: 84px;
+    height: 57px;
+    text-align: center;
+    font-size: 12px;
+    
+  }
+}

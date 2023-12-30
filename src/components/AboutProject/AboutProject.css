@@ -1,0 +1,136 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 110px 70px 110px;
+  /* padding-top: 110px; */
+}
+
+@media screen and (max-width: 770px) {
+  .project {
+    max-width: 768px;
+    margin: 90px 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .project {
+    max-width: 284px;
+    margin: 70px 18px 70px;
+  }
+}
+
+.project__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+@media screen and (max-width: 770px) {
+  .project__container {
+    column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .project__container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    gap: 56px;
+  }
+}
+
+.project__title {
+  color: #ffffff;
+  width: 100%;
+  font-size: 22px;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 23px;
+}
+
+@media screen and (max-width: 770px) {
+  .project__title {
+    font-size: 18px;
+    padding-bottom: 29px;
+  }
+}
+
+.project__card-description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .project__card-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .project__card-description {
+    font-size: 11px;
+    margin: 0px;
+    line-height: 16px;
+  }
+}
+
+.project__card-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (max-width: 770px) {
+  .project__card-title {
+    font-size: 18px;
+  }
+}
+
+.project__progress {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  row-gap: 14px;
+}
+@media screen and (max-width: 770px) {
+  .project__progress {
+    grid-template-columns: 140px 1fr;
+  }
+}
+@media screen and (max-width: 440px) {
+  .project__progress {
+    grid-template-columns: 100px 1fr;
+    row-gap: 8px;
+  }
+}
+
+.project__meter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+}
+.project__meter_grey {
+  background-color: #303030;
+  color: #ffffff;
+}
+.project__meter_green {
+  background-color: #3ddc84;
+  color: #000000;
+}
+.project__meter_black {
+  color: #8b8b8b;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+@media screen and (max-width: 770px) {
+  .project__card {
+    gap: 22px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .project__card {
+    gap: 16px;
+  }
+}

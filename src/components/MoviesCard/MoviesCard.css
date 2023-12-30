@@ -1,0 +1,102 @@
+.card {
+  display: flex;
+  position: relative;
+  max-width: 360px;
+  flex-direction: column;
+  height: 231px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 433px) {
+  .card {
+    height: 199px;
+    width: 100%;
+    
+  }
+}
+.card__table {
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 14px 14px 0px 14px;
+  flex-direction: row;
+}
+@media screen and (max-width: 771px) {
+  .card__table {
+    padding: 25px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .card__table {
+    padding: 16px 0px 0px 0px;
+  }
+}
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  position: relative;
+ height: 201px;
+}
+@media screen and (max-width: 433px) {
+  .card__photo {
+    height: 168px;
+  }
+}
+
+.card__name {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 250px;
+  font-weight: 500;
+  font-size: 13px;
+  align-items: end;
+}
+@media screen and (max-width: 433px) {
+  .card__name {
+
+    width: 240px;
+    font-size: 12px;
+    
+  }
+}
+
+.card__duration {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8b8b8b;
+  background-color: #2f2f2f;
+  width: 44px;
+  border-radius: 3px;
+  display: flex; 
+  justify-content: center; 
+  align-items: end; 
+  margin: 0;
+  padding: 0;
+}
+
+.card__like {
+  background: transparent;
+  background-image: url(../../images/saved.svg);
+  width: 72px;
+  height: 21px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  padding: 0;
+  transition: opacity 0.3s ease-in;
+}
+.card__like:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 433px) {
+  .card__like {
+    top: 10px;
+    right: 10px;
+  }
+}
